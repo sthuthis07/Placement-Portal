@@ -1,10 +1,9 @@
 <?php
 
-//To Handle Session Variables on This Page
+
 session_start();
 
 
-//Including Database Connection From db.php file to avoid rewriting in all files
 require_once("db.php");
 ?>
 <!DOCTYPE html>
@@ -45,53 +44,17 @@ require_once("db.php");
 
     <main id="main">
 
-        <!-- ======= Featured Services Section ======= -->
-        <!-- <section id="featured-services" class="featured-services">
-            <div class="container">
-
-                <div class="row gy-4">
-
-                    <div class="col-xl-3 col-md-6 d-flex" data-aos="zoom-out">
-                        <div class="service-item position-relative">
-                            <div class="icon"><i class="bi bi-activity icon"></i></div>
-                            <h4><a href="" class="stretched-link">Login</a></h4>
-                            <p>Students can login using their credentials. </p>
-                        </div>
-                    </div>
-
-                    <div class="col-xl-3 col-md-6 d-flex" data-aos="zoom-out" data-aos-delay="200">
-                        <div class="service-item position-relative">
-                            <div class="icon"><i class="bi bi-bounding-box-circles icon"></i></div>
-                            <h4><a href="" class="stretched-link">Register</a></h4>
-                            <p>Register yourself here.</p>
-                        </div>
-                    </div>
-
-        <div class="col-xl-3 col-md-6 d-flex" data-aos="zoom-out" data-aos-delay="400">
-            <div class="service-item position-relative">
-                <div class="icon"><i class="bi bi-calendar4-week icon"></i></div>
-                <h4><a href="" class="stretched-link">Look for companies</a></h4>
-                <p>You can search for companies.</p>
-            </div>
-        </div>
-
-        <div class="col-xl-3 col-md-6 d-flex" data-aos="zoom-out" data-aos-delay="600">
-            <div class="service-item position-relative">
-                <div class="icon"><i class="bi bi-broadcast icon"></i></div>
-                <h4><a href="" class="stretched-link">Apply for Drives</a></h4>
-                <p>Look for eligibilty criteria and apply for companies accordingly.</p>
-            </div>
-        </div><!-- End Service Item -->
+        
 
         </div>
 
         </div>
-        </section><!-- End Featured Services Section -->
+        </section>
 
 
 
 
-        <!-- ======= Call To Action Section ======= -->
+        
         <section id="cta" class="cta">
             <div class="container" data-aos="zoom-out">
 
@@ -118,10 +81,7 @@ require_once("db.php");
                 </div>
 
             </div>
-        </section><!-- End Call To Action Section -->
-
-
-        <!-- ======= Clients Section ======= -->
+        </section>
         <section id="clients" class="clients">
             <div class="container" data-aos="zoom-out">
 
@@ -139,7 +99,7 @@ require_once("db.php");
                 </div>
 
             </div>
-        </section><!-- End Clients Section -->
+        </section>
 
 
 
@@ -306,73 +266,7 @@ require_once("db.php");
 
     <!-- End Footer -->
 
-    <!-- TPO bot
-
-    <a href="javascript:" id="return-to-top"><i class="icon-chevron-up"></i></a>
-
-    <button class="open-button is-size-5" onclick="openForm()" style="color:#6900FF !important;"><strong><i class="fas fa-comment-alt"></i> Chat</strong></button>
-
-    <div class="chat-popup" id="myForm">
-        <form class="form-container">
-            <iframe style="border: none;border-radius: 5px;" width="280" height="390" allow="microphone;" src="https://console.dialogflow.com/api-client/demo/embedded/7dec0910-2f92-4902-849c-5c6f90718781">
-            </iframe>
-
-            <button type="button" class="button cancel is-fullwidth" style="background-color: rgba(105, 0, 255, 0.11);color:#6900FF;" onclick="closeForm()"><strong>Close</strong></button>
-        </form>
-    </div>
-
-    </div>
-
-    <!-- JS FILES -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.js'></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
-    <script src="{% static 'js/tabs.js' %}"></script>
-    <style>
-
-    </style>
-    <script> -->
-        <!-- // ===== Scroll to Top ==== 
-        $(window).scroll(function() {
-            if ($(this).scrollTop() >= 50) { // If page is scrolled more than 50px
-                $('#return-to-top').fadeIn(200); // Fade in the arrow
-            } else {
-                $('#return-to-top').fadeOut(200); // Else fade out the arrow
-            }
-        });
-        $('#return-to-top').click(function() { // When arrow is clicked
-            $('body,html').animate({
-                scrollTop: 0 // Scroll to top of body
-            }, 500);
-        });
-
-        function openForm() {
-            document.getElementById("myForm").style.display = "block";
-        }
-
-        function closeForm() {
-            document.getElementById("myForm").style.display = "none";
-        }
-        $("#button").click(function() {
-            $('html, body').animate({
-                scrollTop: $("#about").offset().top
-            }, 1000);
-        });
-        $("#button1").click(function() {
-            $('html, body').animate({
-                scrollTop: $("#events").offset().top
-            }, 1000);
-        });
-    </script>
-    <script src="assets/js/main1.js"></script>
-    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-    <script src="assets/js/counter.js"></script>
- -->
- <!-- --> 
-
-    <!-- tpo bot ends -->
-
-
+    
 
 </body>
 
