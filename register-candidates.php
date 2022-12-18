@@ -62,7 +62,7 @@ if (isset($_SESSION['id_user']) || isset($_SESSION['id_company'])) {
                 </div>
                 <div class="form-group">
                   <label>Date Of Birth</label>
-                  <input class="form-control input-lg" type="date" id="dob" min="1960-01-01" max="1999-01-31" name="dob" placeholder="Date Of Birth">
+                  <input class="form-control input-lg" type="date" id="dob" name="dob" placeholder="Date Of Birth">
                 </div>
                 <div class="form-group">
                   <input class="form-control input-lg" type="text" id="age" name="age" placeholder="Age" readonly>
@@ -155,9 +155,7 @@ if (isset($_SESSION['id_user']) || isset($_SESSION['id_company'])) {
       </div>
     </footer>
 
-    <!-- /.control-sidebar -->
-    <!-- Add the sidebar's background. This div must be placed
-       immediately after the control sidebar -->
+    
     <div class="control-sidebar-bg"></div>
 
   </div>
@@ -173,18 +171,14 @@ if (isset($_SESSION['id_user']) || isset($_SESSION['id_company'])) {
   <script type="text/javascript">
     function validatePhone(event) {
 
-      //event.keycode will return unicode for characters and numbers like a, b, c, 5 etc.
-      //event.which will return key for mouse events and other events like ctrl alt etc. 
+      
       var key = window.event ? event.keyCode : event.which;
 
       if (event.keyCode == 8 || event.keyCode == 46 || event.keyCode == 37 || event.keyCode == 39) {
-        // 8 means Backspace
-        //46 means Delete
-        // 37 means left arrow
-        // 39 means right arrow
+        
         return true;
       } else if (key < 48 || key > 57) {
-        // 48-57 is 0-9 numbers on your keyboard.
+       
         return false;
       } else return true;
     }
