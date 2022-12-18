@@ -94,42 +94,7 @@ if (isset($_POST)) {
 		$sql = "INSERT INTO users(firstname, lastname, email, password, address, city, state, contactno, qualification, stream, passingyear, dob, age, designation, resume, hash, aboutme, skills) VALUES ('$firstname', '$lastname', '$email', '$password', '$address', '$city', '$state', '$contactno', '$qualification', '$stream', '$passingyear', '$dob', '$age', '$designation', '$file', '$hash', '$aboutme', '$skills')";
 
 		if ($conn->query($sql) === TRUE) {
-			// Send Email
-
-			// $to = $email;
-
-			// $subject = "Job Portal - Confirm Your Email Address";
-
-			// $message = '
-
-			// <html>
-			// <head>
-			// 	<title>Confirm Your Email</title>
-			// <body>
-			// 	<p>Click Link To Confirm</p>
-			// 	<a href="yourdomain.com/verify.php?token='.$hash.'&email='.$email.'">Verify Email</a>
-			// </body>
-			// </html>
-			// ';
-
-			// $headers[] = 'MIME-VERSION: 1.0';
-			// $headers[] = 'Content-type: text/html; charset=iso-8859-1';
-			// $headers[] = 'To: '.$to;
-			// $headers[] = 'From: hello@yourdomain.com';
-			// //you add more headers like Cc, Bcc;
-
-			// $result = mail($to, $subject, $message, implode("\r\n", $headers)); // \r\n will return new line. 
-
-			// if($result === TRUE) {
-
-			// 	//If data inserted successfully then Set some session variables for easy reference and redirect to login
-			// 	$_SESSION['registerCompleted'] = true;
-			// 	header("Location: login.php");
-			// 	exit();
-
-			// }
-
-			// //If data inserted successfully then Set some session variables for easy reference and redirect to login
+			
 			$_SESSION['registerCompleted'] = true;
 			header("Location: login-candidates.php");
 			exit();
